@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--mybatis-config.xml-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--控制台日志输出-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--配置别名-->
+    <typeAliases>
+        <package name="ml.guest997.pojo"/>
+    </typeAliases>
+    <!--注册 mapper 配置文件-->
+    <mappers>
+        <mapper class="ml.guest997.dao.BooksMapper"/>
+    </mappers>
+</configuration>
